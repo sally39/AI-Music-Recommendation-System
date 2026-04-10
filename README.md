@@ -1,32 +1,45 @@
-🎵 AI-Powered Music Recommendation System
+# 🎵 AI-Powered Music Recommendation System  
 
-A machine learning-based web app that recommends songs using content-based filtering. It analyzes lyrics and metadata to suggest similar songs—even for new or less popular tracks.
+A simple machine learning web app that recommends songs based on **content similarity** using lyrics and metadata.
 
-🚀 Features
-🎯 Personalized recommendations
-🧠 No user history required (solves cold-start problem)
-⚡ Fast and scalable
-📊 Similarity scores
-🌐 Simple Streamlit UI
-🧠 Tech Stack
-Python
-Pandas, NumPy, Scikit-learn
-TF-IDF Vectorization
-Nearest Neighbors
-Streamlit
-⚙️ Setup
+---
+
+## 🚀 Features  
+- Personalized song recommendations  
+- Works without user history (no cold-start issue)  
+- Fast and scalable  
+- Displays similarity scores  
+- Interactive UI with Streamlit  
+
+---
+
+## 🧠 Tech Stack  
+- Python  
+- Pandas, NumPy, Scikit-learn  
+- TF-IDF Vectorization  
+- Nearest Neighbors Algorithm  
+- Streamlit  
+
+---
+
+## 📌 How It Works
+Converts song data into numerical vectors using TF-IDF
+Uses cosine similarity to find similar songs
+Recommends top matching songs with scores
+
+---
+
+## 📊 Dataset
+
+Spotify Million Song Dataset
+
+---
+## ⚙️ Installation  & Usage
+
+```bash
 git clone https://github.com/your-username/music-recommendation-system.git
 cd music-recommendation-system
 pip install -r requirements.txt
-▶️ Run
-# Train model
-python train_model.py
 
-# Launch app
+python train_model.py
 streamlit run app.py
-📌 How It Works
-Converts song text into vectors using TF-IDF
-Finds similar songs using cosine similarity
-Returns top recommendations with match scores
-📊 Dataset
-Spotify Million Song Dataset
